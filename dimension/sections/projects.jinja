@@ -1,0 +1,14 @@
+{% for project in projects %}
+<h4 class="major">{{ project[0]['title'] }}</h4>
+
+{% if project[0]["image"] %}
+    <span class="image main" ><img src="{{ project[0]['image'] | get_image_path}}" alt="{{ project[0]['title'] }}"/></span>
+{% endif %}
+
+    {{ project[1] | safe }}
+    {% if project[0]["link"] %}
+    <ul class="icons">
+    <li><a href="{{ project[0]['link'] }}" class="icon solid fa-link" target="_blank"><span class="label">{{ project[0]['title'] }}</span></a></li>
+    </ul>
+    {% endif %}
+{% endfor %}
