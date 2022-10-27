@@ -9,4 +9,12 @@ email: utkarsh.sendmail@gmail.com
 phone: 8877633383
 blog: true
 blog_link: https://thinkstraight.substack.com/
-twitter_embed_url: <a class="twitter-timeline" href="https://twitter.com/utk_tweeting?ref_src=twsrc%5Etfw">Tweets by utk_tweeting</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+social: true
+twitter_embed_url: https://twitter.com/utk_tweeting?ref_src=twsrc%5Etfw
+projects: 
+  {0:
+    {'title':'Investor Table',
+      'link': 'https://airtable.com/embed/shrnPlOx4pF2U0Ed8?backgroundColor=blue&viewControls=on'},
+   1:{'title':'Startup Table',
+      'link': 'https://airtable.com/embed/shrkQoe33gMMyoTcC?backgroundColor=blue&viewControls=on'}   
+  }
