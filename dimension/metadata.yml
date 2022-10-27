@@ -1,70 +1,46 @@
-name: dimension
-ezcv_version: "0.3.0"
-created: 2022-04-22
-updated: 2022-04-22
+created: '2022-10-26'
+ezcv_version: 0.3.4
 folder: dimension
-required_config:
-  name:
-    type: str
-    default: name
-    description: "Your full name"
-  biography:
-    type: str
-    default: "A description of yourself"
-    description: "This field is for writing about yourself you can add a > to span multiple lines"
+name: dimension
 sections:
-  education:
-    type: markdown
-    fields:
-      title: str
-      institution:
-        required: true
-        type: str
-      month_started: str
-      year_started: str
-      month_ended: str
-      year_ended: str
-      current: bool
-  gallery:
-    type: gallery
   blog:
-    type: blog
+    feed: true
+    fields:
+      created: datetime
+      title: str
+      updated: datetime
     overview: true
     single: true
-    feed: true
+    type: blog
+  education:
+    fields:
+      current: bool
+      institution: str
+      title: str
+      year_started: int
+    type: markdown
+  gallery:
+    type: gallery
   projects:
-    type: markdown
     fields:
-      title:
-        required: true
-        type: str
-      image: image
+      image: str
       link: str
+      title: str
+    type: markdown
   volunteering_experience:
-    type: markdown
     fields:
-      role:
-        required: true
-        type: str
-      company:
-        required: true
-        type: str
-      month_started: str
-      year_started: str
-      month_ended: str
-      year_ended: str
+      company: str
       current: bool
+      month_started: str
+      role: str
+      year_started: int
+    type: markdown
   work_experience:
-    type: markdown
     fields:
-      role:
-        required: true
-        type: str
-      company:
-        required: true
-        type: str
-      month_started: str
-      year_started: str
-      month_ended: str
-      year_ended: str
+      company: str
       current: bool
+      month_started: str
+      role: str
+      year_started: int
+    type: markdown
+updated: '2022-10-26'

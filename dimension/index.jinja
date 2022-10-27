@@ -92,8 +92,8 @@
 								<li><a href="#gallery">Gallery</a></li>
 								{%endif%}
 
-								{% if blog_html %}
-								<li><a href="/blog">Blog</a></li>
+								{% if config['blog'] %}
+								<li><a href={{config['blog_link']}}>Blog</a></li>
 								{%endif%}
 
 								{% if config['resume'] %}
