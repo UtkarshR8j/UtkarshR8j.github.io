@@ -89,7 +89,7 @@
 								{%endif%}
 
 								{% if gallery_html %}
-								<li><a href="#gallery">Gallery</a></li>
+								<li><a href="#gallery">Elsewhere</a></li>
 								{%endif%}
 
 								{% if config['blog'] %}
@@ -175,15 +175,20 @@
 							</article>
 						{% endif %}
 
-						{% if gallery_html %}
+						{% if config["twitter_embed_url"] %}
+						
 						<!-- Start of gallery section -->
-							<article id="gallery">
-								<h2 class="major">Gallery</h2>
+						<article id="gallery">
+								<h2 class="major">Social</h2>
 								{{ gallery_html | safe }}
+							
+								<a class="twitter-timeline" data-tweet-limit="2" href="{{config["twitter_embed_url"]}}">Tweets by utk_tweeting</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 							</article>
-						<!-- End of gallery section -->
 
+						<!-- End of gallery section -->
 						{% endif %}
+
 					</div>
 
 				<!-- Footer -->
