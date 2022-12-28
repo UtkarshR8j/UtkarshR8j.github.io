@@ -12,9 +12,3 @@ blog_link: https://thinkstraight.substack.com/
 social: true
 twitter_embed_url: https://twitter.com/utk_tweeting?ref_src=twsrc%5Etfw
 projects: 
-  {0:
-    {'title':'Investor Table',
-      'link': 'https://airtable.com/embed/shrnPlOx4pF2U0Ed8?backgroundColor=blue&viewControls=on'},
-   1:{'title':'Startup Table',
-      'link': 'https://airtable.com/embed/shrkQoe33gMMyoTcC?backgroundColor=blue&viewControls=on'}   
-  }
